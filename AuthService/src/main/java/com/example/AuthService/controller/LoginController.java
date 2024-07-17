@@ -1,7 +1,6 @@
 package com.example.AuthService.controller;
 
 import com.example.AuthService.Service.LoginService;
-import com.example.AuthService.dao.LoginDAO;
 import com.example.AuthService.domain.LoginRequestBody;
 import com.example.AuthService.entity.Login;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +26,5 @@ public class LoginController {
                 .attemp_time(currentTimestamp)
                 .build();
         loginService.create(login);
-        System.out.println(">>>>>");
     }
 }
