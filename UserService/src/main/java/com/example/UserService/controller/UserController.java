@@ -33,7 +33,8 @@ public class UserController {
     }
 
     @GetMapping("/user/getByEmail")
-    public User getById(@RequestParam String email){
+    public User getByEmail(@RequestParam String email){
+        System.out.println(email);
         User user = userService.getByEmail(email);
         if (user == null){
             return null;

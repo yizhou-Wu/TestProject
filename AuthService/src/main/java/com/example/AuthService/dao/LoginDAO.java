@@ -22,8 +22,6 @@ public class LoginDAO {
         try {
             Session session = sessionFactory.getCurrentSession();
             session.save(login);
-            System.out.println("DAO");
-
         }
         catch (HibernateException e){
             e.printStackTrace();
