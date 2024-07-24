@@ -3,6 +3,7 @@ package com.example.AuthService.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Entity
 @Getter
@@ -23,4 +24,8 @@ public class User {
     private String last_name;
     @Column(name = "email")
     private String email;
+    @Column(name = "create_date")
+    private Timestamp create_date;
+    @Column(name = "is_active")
+    private int is_active;
 }

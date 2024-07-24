@@ -1,4 +1,4 @@
-package com.example.AuthService.Service;
+package com.example.AuthService.service;
 
 import com.example.AuthService.dao.LoginDAO;
 import com.example.AuthService.entity.Login;

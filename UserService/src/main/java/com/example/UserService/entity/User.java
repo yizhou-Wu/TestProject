@@ -1,8 +1,11 @@
 package com.example.UserService.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -23,4 +26,10 @@ public class User {
     private String last_name;
     @Column(name = "email")
     private String email;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "user_role",
+        joinColumns = {@JoinColumn(name = "user_id")},
+        inverseJoinColumns = {@JoinColumn(name = "role_id")})
+    @JsonIgnore
+    private Set<Role> roleList;
 }

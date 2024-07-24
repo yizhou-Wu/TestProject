@@ -38,6 +38,7 @@ public class LoginDAO {
             return session.createQuery(criteriaQuery).stream().collect(Collectors.toList());
         }
         catch (HibernateException e){
+            e.printStackTrace();
             return null;
         }
     }

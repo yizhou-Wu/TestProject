@@ -19,4 +19,6 @@ public class Login {
     private int user_id;
     @Column(name = "attemp_time")
     private Timestamp attemp_time;
+    @Column(name = "is_success")
+    private int is_success;
 }

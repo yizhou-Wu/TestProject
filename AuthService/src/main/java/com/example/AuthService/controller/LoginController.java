@@ -1,6 +1,6 @@
 package com.example.AuthService.controller;
 
-import com.example.AuthService.Service.LoginService;
+import com.example.AuthService.service.LoginService;
 import com.example.AuthService.domain.LoginRequestBody;
 import com.example.AuthService.entity.Login;
 import com.example.AuthService.entity.User;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.time.Instant;
 
