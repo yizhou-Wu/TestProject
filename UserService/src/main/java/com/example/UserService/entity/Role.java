@@ -2,6 +2,7 @@ package com.example.UserService.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.sql.Timestamp;
 @Table(name = "role")
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Role {
     @Id
